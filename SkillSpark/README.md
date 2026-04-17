@@ -27,7 +27,7 @@ skillspark/
 │   └── style.css       → Custom styles & theme
 │
 ├── assets/
-│   └── images/         → (Add images here)
+│   └── images/         
 │
 └── README.md
 ```
