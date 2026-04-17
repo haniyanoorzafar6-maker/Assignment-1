@@ -124,15 +124,15 @@ skillspark/
 
 ## 📸 Screenshots
 
-> Add screenshots to `assets/images/` folder and link here:
+> Screenshots are in `assets/images/` folder and link here:
 
 | Page | Preview |
 |------|---------|
-| Home | `assets/images/screenshot-home.png` |
-| Courses | `assets/images/screenshot-courses.png` |
-| About | `assets/images/screenshot-about.png` |
-| Register | `assets/images/screenshot-register.png` |
-| Contact | `assets/images/screenshot-contact.png` |
+| Home | `SkillSpark/assets/images/screenshot-home.png` |
+| Courses | `SkillSpark/assets/images/screenshot-courses.png` |
+| About | `SkillSpark/assets/images/screenshot-about-0.png` |
+| Register | `SkillSpark/assets/images/screenshot-register-0.png` |
+| Contact | `SkillSpark/assets/images/screenshot-contact-0.png` |
 
 ---
 
@@ -140,7 +140,7 @@ skillspark/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/skillspark.git
+   git clone (https://github.com/haniyanoorzafar6-maker/Assignment-1)
    ```
 
 2. Open `index.html` in your browser — no server required!
@@ -148,7 +148,7 @@ skillspark/
 3. Or deploy to GitHub Pages:
    - Go to repo Settings → Pages
    - Select `main` branch, root folder
-   - Your site will be live at `https://yourusername.github.io/skillspark`
+   - Your site will be live at `](https://github.io/haniyanoorzafar6-maker/Assignment-1)`
 
 ---
 
