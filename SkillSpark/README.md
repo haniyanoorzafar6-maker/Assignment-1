@@ -176,8 +176,8 @@ Meaningful commits in this project:
 
 ## 👨‍💻 Author
 
-**Your Name** — Web Technologies Assignment 01  
-University: Your University Name  
+**Haniya Noor Zafar** — Web Technologies Assignment 01  
+University: Air University  
 Course: Web Technologies  
 Submitted: March 2026
 
