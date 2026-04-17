@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register – SkillSpark</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">⚡ SkillSpark</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Courses</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="courses.html"><i class="fa-brands fa-html5 me-2 text-warning"></i>Web Development</a></li>
+            <li><a class="dropdown-item" href="courses.html"><i class="fa-brands fa-android me-2 text-success"></i>App Development</a></li>
+            <li><a class="dropdown-item" href="courses.html"><i class="fa-solid fa-pen-ruler me-2" style="color:var(--secondary)"></i>UI/UX Design</a></li>
+            <li><a class="dropdown-item" href="courses.html"><i class="fa-solid fa-robot me-2" style="color:var(--primary)"></i>AI & Data Science</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2">
+          <a href="register.html" class="btn-primary-custom active">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container text-center">
+    <div class="section-badge">🎓 Enroll Today</div>
+    <h1 class="section-title mt-2">Start Your <span class="text-gradient">Journey</span></h1>
+    <p class="section-subtitle">Join 5,200+ students already learning with SkillSpark. First 7 days free, no credit card required.</p>
+  </div>
+</section>
+
+<!-- REGISTRATION FORM -->
+<section class="section" style="padding-top:3rem;">
+  <div class="container">
+
+    <!-- Success Alert (hidden initially) -->
+    <div class="alert-custom mb-4" id="successAlert" style="display:none;">
+      <i class="fa-solid fa-circle-check fa-lg"></i>
+      <div>
+        <strong>Registration successful!</strong> Welcome to SkillSpark. Check your email for next steps. 🎉
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="form-card" data-aos="fade-up">
+          <h3 style="font-family:'Syne',sans-serif;font-weight:800;margin-bottom:0.5rem;">Create Your Account</h3>
+          <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:2rem;">All fields marked with <span style="color:#EF4444;">*</span> are required.</p>
+
+          <form id="registerForm" novalidate>
+
+            <!-- Row 1: First & Last Name -->
+            <div class="row g-3 mb-3">
+              <div class="col-sm-12 col-md-6">
+                <label class="form-label">First Name <span style="color:#EF4444;">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                  <input type="text" class="form-control" id="firstName" placeholder="Ahmed" required minlength="2" />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please enter your first name (min 2 characters).</div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <label class="form-label">Last Name <span style="color:#EF4444;">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                  <input type="text" class="form-control" id="lastName" placeholder="Khan" required minlength="2" />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please enter your last name.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 2: Email & Phone -->
+            <div class="row g-3 mb-3">
+              <div class="col-sm-12 col-md-6">
+                <label class="form-label">Email Address <span style="color:#EF4444;">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                  <input type="email" class="form-control" id="email" placeholder="ahmed@example.com" required />
+                  <div class="valid-feedback">Valid email!</div>
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <label class="form-label">Phone Number</label>
+                <div class="input-group">
+                  <span class="input-group-text">🇵🇰 +92</span>
+                  <input type="tel" class="form-control" id="phone" placeholder="3001234567" pattern="[0-9]{10}" />
+                  <div class="invalid-feedback">Enter a valid 10-digit number.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 3: University & Year -->
+            <div class="row g-3 mb-3">
+              <div class="col-sm-12 col-md-6">
+                <label class="form-label">University / Institution <span style="color:#EF4444;">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fa-solid fa-building-columns"></i></span>
+                  <input type="text" class="form-control" id="university" placeholder="COMSATS, NUST, FAST..." required />
+                  <div class="valid-feedback">Great!</div>
+                  <div class="invalid-feedback">Please enter your institution.</div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <label class="form-label">Year of Study <span style="color:#EF4444;">*</span></label>
+                <select class="form-select" id="yearOfStudy" required>
+                  <option value="" disabled selected>Select year...</option>
+                  <option value="1">1st Year</option>
+                  <option value="2">2nd Year</option>
+                  <option value="3">3rd Year</option>
+                  <option value="4">4th Year</option>
+                  <option value="grad">Graduate</option>
+                  <option value="working">Working Professional</option>
+                </select>
+                <div class="invalid-feedback">Please select your year of study.</div>
+              </div>
+            </div>
+
+            <!-- Row 4: Course Selection -->
+            <div class="row g-3 mb-3">
+              <div class="col-sm-12 col-md-6">
+                <label class="form-label">Course of Interest <span style="color:#EF4444;">*</span></label>
+                <select class="form-select" id="courseSelect" required>
+                  <option value="" disabled selected>Select a course...</option>
+                  <option value="webdev">Full-Stack Web Development — PKR 4,999</option>
+                  <option value="reactnative">React Native App Development — PKR 5,499</option>
+                  <option value="uiux">UI/UX Design Masterclass — PKR 3,999</option>
+                  <option value="aiml">AI & Machine Learning Bootcamp — PKR 7,999</option>
+                  <option value="react">Frontend React (Free)</option>
+                  <option value="datascience">Data Science with Python — PKR 2,999</option>
+                </select>
+                <div class="invalid-feedback">Please select a course.</div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <label class="form-label">Upload CV / Portfolio (optional)</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fa-solid fa-paperclip"></i></span>
+                  <input type="file" class="form-control" id="cvUpload" accept=".pdf,.doc,.docx,.zip" />
+                </div>
+                <div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.35rem;">PDF, DOC, or ZIP. Max 5MB.</div>
+              </div>
+            </div>
+
+            <!-- Row 5: Learning goal (Radio) -->
+            <div class="mb-3">
+              <label class="form-label">Primary Learning Goal <span style="color:#EF4444;">*</span></label>
+              <div class="row g-2" id="goalGroup">
+                <div class="col-sm-6 col-md-3">
+                  <div style="background:var(--dark-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1rem;cursor:pointer;transition:all 0.3s;" class="goal-option" onclick="selectGoal(this,'internship')">
+                    <input type="radio" name="goal" value="internship" class="form-check-input me-2" required />
+                    <span>🎓 Get Internship</span>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <div style="background:var(--dark-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1rem;cursor:pointer;transition:all 0.3s;" class="goal-option" onclick="selectGoal(this,'job')">
+                    <input type="radio" name="goal" value="job" class="form-check-input me-2" />
+                    <span>💼 Land a Job</span>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <div style="background:var(--dark-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1rem;cursor:pointer;transition:all 0.3s;" class="goal-option" onclick="selectGoal(this,'freelance')">
+                    <input type="radio" name="goal" value="freelance" class="form-check-input me-2" />
+                    <span>🚀 Go Freelance</span>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <div style="background:var(--dark-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1rem;cursor:pointer;transition:all 0.3s;" class="goal-option" onclick="selectGoal(this,'startup')">
+                    <input type="radio" name="goal" value="startup" class="form-check-input me-2" />
+                    <span>💡 Build Startup</span>
+                  </div>
+                </div>
+              </div>
+              <div id="goalError" style="color:#EF4444;font-size:0.8rem;margin-top:0.35rem;display:none;">Please select a learning goal.</div>
+            </div>
+
+            <!-- Row 6: Experience level -->
+            <div class="mb-3">
+              <label class="form-label">Experience Level</label>
+              <div class="d-flex flex-wrap gap-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="experience" id="expBeginner" value="beginner" checked />
+                  <label class="form-check-label" for="expBeginner">🌱 Complete Beginner</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="experience" id="expSome" value="some" />
+                  <label class="form-check-label" for="expSome">📘 Some Experience</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="experience" id="expIntermediate" value="intermediate" />
+                  <label class="form-check-label" for="expIntermediate">💻 Intermediate</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="experience" id="expAdvanced" value="advanced" />
+                  <label class="form-check-label" for="expAdvanced">🏆 Advanced</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 7: Checkboxes -->
+            <div class="mb-4" style="background:var(--dark-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.5rem;">
+              <p style="font-weight:600;margin-bottom:1rem;">Additional Options</p>
+              <div class="row g-2">
+                <div class="col-sm-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="newsletter" checked />
+                    <label class="form-check-label" for="newsletter">📧 Subscribe to newsletter</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="mentorship" />
+                    <label class="form-check-label" for="mentorship">👨‍🏫 Interested in mentorship</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="scholarship" />
+                    <label class="form-check-label" for="scholarship">🎓 Apply for scholarship</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="jobBoard" checked />
+                    <label class="form-check-label" for="jobBoard">💼 Access job board</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Terms checkbox -->
+            <div class="mb-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="terms" required />
+                <label class="form-check-label" for="terms">
+                  I agree to SkillSpark's <a href="#" style="color:var(--primary);">Terms of Service</a> and <a href="#" style="color:var(--primary);">Privacy Policy</a> <span style="color:#EF4444;">*</span>
+                </label>
+                <div class="invalid-feedback">You must agree to the terms to register.</div>
+              </div>
+            </div>
+
+            <!-- Submit -->
+            <div class="d-flex gap-3 flex-wrap">
+              <button type="submit" class="btn-primary-custom" style="min-width:200px;">
+                <i class="fa-solid fa-rocket"></i> Create My Account
+              </button>
+              <button type="reset" class="btn-outline-custom">
+                <i class="fa-solid fa-rotate-left"></i> Reset
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="footer-brand">⚡ SkillSpark</div>
+        <p class="footer-tagline">Pakistan's fastest-growing tech education platform.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 SkillSpark. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="dark-mode-toggle" id="darkModeToggle"><i class="fa-solid fa-moon" id="darkModeIcon"></i></button>
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// AOS
+const observer = new IntersectionObserver(e => e.forEach(x => { if (x.isIntersecting) x.target.classList.add('aos-animate'); }), { threshold: 0.1 });
+document.querySelectorAll('[data-aos]').forEach(el => observer.observe(el));
+
+// Scroll top
+window.addEventListener('scroll', () => document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 300));
+
+// Dark mode
+const toggle = document.getElementById('darkModeToggle');
+const icon   = document.getElementById('darkModeIcon');
+let isLight  = localStorage.getItem('theme') === 'light';
+function applyTheme() { document.body.classList.toggle('light-mode', isLight); icon.className = isLight ? 'fa-solid fa-sun' : 'fa-solid fa-moon'; }
+applyTheme();
+toggle.addEventListener('click', () => { isLight = !isLight; localStorage.setItem('theme', isLight ? 'light' : 'dark'); applyTheme(); });
+
+// Goal selection
+function selectGoal(el, val) {
+  document.querySelectorAll('.goal-option').forEach(o => o.style.borderColor = 'var(--border)');
+  el.style.borderColor = 'var(--primary)';
+  el.style.background = 'rgba(124,58,237,0.1)';
+  el.querySelector('input[type=radio]').checked = true;
+  document.getElementById('goalError').style.display = 'none';
+}
+
+// Live validation
+function validateField(el) {
+  if (el.checkValidity()) {
+    el.classList.add('is-valid');
+    el.classList.remove('is-invalid');
+  } else {
+    el.classList.add('is-invalid');
+    el.classList.remove('is-valid');
+  }
+}
+
+document.querySelectorAll('.form-control, .form-select').forEach(el => {
+  el.addEventListener('blur', () => validateField(el));
+  el.addEventListener('input', () => { if (el.classList.contains('is-invalid')) validateField(el); });
+});
+
+// Form Submit
+document.getElementById('registerForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const goalChecked = document.querySelector('input[name="goal"]:checked');
+  if (!goalChecked) { document.getElementById('goalError').style.display = 'block'; }
+
+  let valid = true;
+  this.querySelectorAll('[required]').forEach(el => {
+    validateField(el);
+    if (!el.checkValidity()) valid = false;
+  });
+
+  if (valid && goalChecked) {
+    document.getElementById('successAlert').style.display = 'flex';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    this.reset();
+    document.querySelectorAll('.goal-option').forEach(o => { o.style.borderColor = 'var(--border)'; o.style.background = ''; });
+    document.querySelectorAll('.is-valid, .is-invalid').forEach(el => { el.classList.remove('is-valid','is-invalid'); });
+    setTimeout(() => document.getElementById('successAlert').style.display = 'none', 6000);
+  }
+});
+</script>
+</body>
+</html>

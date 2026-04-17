@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillSpark – Learn. Build. Launch.</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════ NAVBAR ══════════════════════ -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      ⚡ SkillSpark
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Courses</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="courses.html"><i class="fa-brands fa-html5 me-2 text-warning"></i>Web Development</a></li>
+            <li><a class="dropdown-item" href="courses.html"><i class="fa-brands fa-android me-2 text-success"></i>App Development</a></li>
+            <li><a class="dropdown-item" href="courses.html"><i class="fa-solid fa-pen-ruler me-2" style="color:var(--secondary)"></i>UI/UX Design</a></li>
+            <li><a class="dropdown-item" href="courses.html"><i class="fa-solid fa-robot me-2" style="color:var(--primary)"></i>AI & Data Science</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2">
+          <a href="register.html" class="btn-primary-custom">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════════ HERO ══════════════════════ -->
+<section class="hero">
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <div class="section-badge" data-aos="fade-up">🚀 Pakistan's #1 Tech Learning Platform</div>
+        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+          Learn. Build.<br/><span class="text-gradient">Launch.</span>
+        </h1>
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+          SkillSpark empowers university students to master real-world tech skills — from zero to job-ready in weeks, not years.
+        </p>
+        <div class="d-flex flex-wrap gap-3" data-aos="fade-up" data-aos-delay="300">
+          <a href="courses.html" class="btn-primary-custom">
+            <i class="fa-solid fa-graduation-cap"></i> Explore Courses
+          </a>
+          <a href="about.html" class="btn-outline-custom">
+            <i class="fa-solid fa-play"></i> Watch Demo
+          </a>
+        </div>
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+          <div>
+            <div class="hero-stat-value">5,200+</div>
+            <div class="hero-stat-label">Students Enrolled</div>
+          </div>
+          <div>
+            <div class="hero-stat-value">24</div>
+            <div class="hero-stat-label">Expert Courses</div>
+          </div>
+          <div>
+            <div class="hero-stat-value">97%</div>
+            <div class="hero-stat-label">Satisfaction Rate</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+        <div class="hero-visual" style="position:relative; min-height:340px;">
+          <!-- Floating cards -->
+          <div class="hero-card-float">
+            <div class="hero-card-icon" style="background:rgba(245,158,11,0.15);">🏆</div>
+            <div>
+              <div class="hero-card-label">Achievement</div>
+              <div class="hero-card-value">Top Rated 2025</div>
+            </div>
+          </div>
+          <div class="hero-card-float">
+            <div class="hero-card-icon" style="background:rgba(16,185,129,0.15);">✅</div>
+            <div>
+              <div class="hero-card-label">New Enrollment</div>
+              <div class="hero-card-value">Ahmed just joined!</div>
+            </div>
+          </div>
+          <div class="hero-card-float">
+            <div class="hero-card-icon" style="background:rgba(6,182,212,0.15);">📈</div>
+            <div>
+              <div class="hero-card-label">This Month</div>
+              <div class="hero-card-value">340 Certificates</div>
+            </div>
+          </div>
+          <!-- Code block -->
+          <div class="hero-code-block mx-auto" style="max-width:480px; position:relative; z-index:2;">
+            <div class="cmt">// Welcome to SkillSpark 🚀</div>
+            <div><span class="kw">const</span> student = {</div>
+            <div>&nbsp;&nbsp;name: <span class="str">"You"</span>,</div>
+            <div>&nbsp;&nbsp;skills: [<span class="str">"HTML"</span>, <span class="str">"React"</span>, <span class="str">"AI"</span>],</div>
+            <div>&nbsp;&nbsp;level: <span class="str">"Beginner"</span> → <span class="str">"Pro"</span></div>
+            <div>};</div>
+            <br/>
+            <div><span class="fn">SkillSpark</span>.<span class="fn">enroll</span>(student);</div>
+            <div><span class="cmt">// 🎉 Career unlocked!</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ FEATURES ══════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <div class="section-badge">Why SkillSpark?</div>
+      <h2 class="section-title">Everything You Need to <span class="text-gradient">Succeed</span></h2>
+      <div class="divider"></div>
+      <p class="section-subtitle mt-3">Our platform is built by developers, for developers — with real-world projects, not just theory.</p>
+    </div>
+    <div class="row g-4 mt-2">
+      <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-card">
+          <div class="feature-icon" style="background:rgba(124,58,237,0.15); color:var(--primary)">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h4>Project-Based Learning</h4>
+          <p>Build real portfolio projects alongside every course. Graduate with code you can show employers, not just a certificate.</p>
+          <a href="courses.html" style="color:var(--primary);font-size:0.875rem;font-weight:600;">Learn more →</a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-card">
+          <div class="feature-icon" style="background:rgba(6,182,212,0.15); color:var(--secondary)">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <h4>Expert Mentorship</h4>
+          <p>Get 1-on-1 guidance from industry professionals with 5+ years of experience at top tech companies across Pakistan and globally.</p>
+          <a href="about.html" style="color:var(--secondary);font-size:0.875rem;font-weight:600;">Meet mentors →</a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-card">
+          <div class="feature-icon" style="background:rgba(245,158,11,0.15); color:var(--accent)">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <h4>Verified Certificates</h4>
+          <p>Industry-recognized certificates you can share on LinkedIn, add to your CV, and use to land internships and full-time roles.</p>
+          <a href="register.html" style="color:var(--accent);font-size:0.875rem;font-weight:600;">Get certified →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ WHY CHOOSE US ══════════════════════ -->
+<section class="section why-section">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="section-badge">Our Edge</div>
+        <h2 class="section-title">Why <span class="text-gradient">Choose Us</span> Over Others?</h2>
+        <p style="color:var(--text-muted); line-height:1.8; margin-bottom:2rem;">
+          We're not just another online course platform. SkillSpark is a community of builders who learn by doing, support each other, and launch careers together.
+        </p>
+        <a href="register.html" class="btn-primary-custom">Join 5,200+ Students</a>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="row g-0">
+          <div class="col-6">
+            <div class="why-item pe-3">
+              <div class="why-icon"><i class="fa-solid fa-bolt"></i></div>
+              <div>
+                <h5>Fast-Paced Curriculum</h5>
+                <p>Go from beginner to hireable in 8–12 weeks with our accelerated tracks.</p>
+              </div>
+            </div>
+            <div class="why-item pe-3">
+              <div class="why-icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+              <div>
+                <h5>Affordable Pricing</h5>
+                <p>Starting at just PKR 2,999. Scholarships available for eligible students.</p>
+              </div>
+            </div>
+            <div class="why-item pe-3">
+              <div class="why-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+              <div>
+                <h5>Learn Anywhere</h5>
+                <p>Mobile-optimized lessons. Download for offline. No excuses, just learning.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="why-item ps-2">
+              <div class="why-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <div>
+                <h5>Career Support</h5>
+                <p>Resume reviews, mock interviews, and direct referrals to our hiring partners.</p>
+              </div>
+            </div>
+            <div class="why-item ps-2">
+              <div class="why-icon"><i class="fa-solid fa-code-branch"></i></div>
+              <div>
+                <h5>Real Projects</h5>
+                <p>Every module ends with a production-ready project you own and can deploy.</p>
+              </div>
+            </div>
+            <div class="why-item ps-2">
+              <div class="why-icon"><i class="fa-solid fa-headset"></i></div>
+              <div>
+                <h5>24/7 Support</h5>
+                <p>Community forum + live chat with instructors. Never get stuck alone again.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ TESTIMONIALS ══════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <div class="section-badge">Student Stories</div>
+      <h2 class="section-title">What Our <span class="text-gradient">Students Say</span></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div id="testimonialCarousel" class="carousel slide mt-5" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="200">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+              <div class="testimonial-card text-center">
+                <div class="testimonial-stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Before SkillSpark, I had zero coding knowledge. After 3 months, I built a full-stack app and got an internship at a startup. The project-based approach is absolutely game-changing!"
+                </p>
+                <div class="testimonial-author justify-content-center">
+                  <div class="testimonial-avatar-placeholder">AR</div>
+                  <div class="text-start">
+                    <div class="testimonial-name">Ahmed Raza</div>
+                    <div class="testimonial-role">Frontend Developer Intern — Lahore</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+              <div class="testimonial-card text-center">
+                <div class="testimonial-stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "The UI/UX Design track transformed how I think about products. I went from engineering student to landing a full-time design role at a fintech company in just 4 months!"
+                </p>
+                <div class="testimonial-author justify-content-center">
+                  <div class="testimonial-avatar-placeholder">SK</div>
+                  <div class="text-start">
+                    <div class="testimonial-name">Sara Khan</div>
+                    <div class="testimonial-role">UX Designer — Karachi</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+              <div class="testimonial-card text-center">
+                <div class="testimonial-stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="testimonial-text">
+                  "I took the AI & Data Science course while completing my CS degree. The instructors were incredibly supportive and the curriculum was modern, relevant, and deeply practical."
+                </p>
+                <div class="testimonial-author justify-content-center">
+                  <div class="testimonial-avatar-placeholder">OM</div>
+                  <div class="text-start">
+                    <div class="testimonial-name">Omar Malik</div>
+                    <div class="testimonial-role">Data Science Student — Islamabad</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" style="left:-2rem;">
+        <span style="background:var(--card-bg);border:1px solid var(--border);border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;color:var(--text);">
+          <i class="fa-solid fa-chevron-left"></i>
+        </span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" style="right:-2rem;">
+        <span style="background:var(--card-bg);border:1px solid var(--border);border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;color:var(--text);">
+          <i class="fa-solid fa-chevron-right"></i>
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ CTA BANNER ══════════════════════ -->
+<section class="section" style="padding:3rem 0;">
+  <div class="container" data-aos="zoom-in">
+    <div style="background:var(--gradient-1);border-radius:var(--radius);padding:3.5rem 2rem;text-align:center;position:relative;overflow:hidden;">
+      <div style="position:absolute;top:-30%;right:-5%;width:300px;height:300px;background:rgba(255,255,255,0.1);border-radius:50%;"></div>
+      <div style="position:absolute;bottom:-30%;left:-5%;width:200px;height:200px;background:rgba(255,255,255,0.05);border-radius:50%;"></div>
+      <h2 style="font-size:clamp(1.8rem,4vw,2.8rem);color:#fff;margin-bottom:1rem;position:relative;z-index:2;">
+        Ready to Spark Your Career?
+      </h2>
+      <p style="color:rgba(255,255,255,0.85);font-size:1.1rem;margin-bottom:2rem;position:relative;z-index:2;">
+        Join thousands of students who launched their tech careers with SkillSpark.
+      </p>
+      <div style="position:relative;z-index:2;" class="d-flex gap-3 justify-content-center flex-wrap">
+        <a href="register.html" style="background:#fff;color:var(--primary);padding:0.8rem 2rem;border-radius:50px;font-family:'Syne',sans-serif;font-weight:700;display:inline-flex;align-items:center;gap:0.5rem;transition:all 0.3s;">
+          <i class="fa-solid fa-rocket"></i> Enroll Free Today
+        </a>
+        <a href="courses.html" style="background:rgba(255,255,255,0.15);color:#fff;border:1.5px solid rgba(255,255,255,0.4);padding:0.8rem 2rem;border-radius:50px;font-family:'Syne',sans-serif;font-weight:600;display:inline-flex;align-items:center;gap:0.5rem;">
+          Browse Courses
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ FOOTER ══════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="footer-brand">⚡ SkillSpark</div>
+        <p class="footer-tagline">Pakistan's fastest-growing tech education platform. We turn curious students into confident builders.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-2">
+        <p class="footer-title">Courses</p>
+        <ul class="footer-links">
+          <li><a href="courses.html">Web Development</a></li>
+          <li><a href="courses.html">App Development</a></li>
+          <li><a href="courses.html">UI/UX Design</a></li>
+          <li><a href="courses.html">AI & Data Science</a></li>
+          <li><a href="courses.html">View All</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-2">
+        <p class="footer-title">Company</p>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">Our Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <p class="footer-title">Stay Updated</p>
+        <p style="color:var(--text-muted);font-size:0.875rem;margin-bottom:1rem;">Subscribe to our newsletter for new courses, tips, and opportunities.</p>
+        <div class="input-group">
+          <input type="email" class="form-control" placeholder="your@email.com" />
+          <button class="btn-primary-custom" type="button" style="border-radius:0 50px 50px 0;padding:0.6rem 1.25rem;">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 SkillSpark. All rights reserved.</p>
+      <p>Made with <i class="fa-solid fa-heart" style="color:var(--primary);"></i> in Pakistan</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Dark Mode Toggle -->
+<button class="dark-mode-toggle" id="darkModeToggle" title="Toggle theme">
+  <i class="fa-solid fa-moon" id="darkModeIcon"></i>
+</button>
+
+<!-- Scroll to Top -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// AOS-like scroll animation
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('aos-animate'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('[data-aos]').forEach(el => observer.observe(el));
+
+// Scroll to top visibility
+window.addEventListener('scroll', () => {
+  const btn = document.getElementById('scrollTop');
+  btn.classList.toggle('visible', window.scrollY > 300);
+});
+
+// Dark mode toggle
+const toggle = document.getElementById('darkModeToggle');
+const icon   = document.getElementById('darkModeIcon');
+let isLight  = localStorage.getItem('theme') === 'light';
+
+function applyTheme() {
+  document.body.classList.toggle('light-mode', isLight);
+  icon.className = isLight ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+}
+applyTheme();
+
+toggle.addEventListener('click', () => {
+  isLight = !isLight;
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  applyTheme();
+});
+</script>
+</body>
+</html>
